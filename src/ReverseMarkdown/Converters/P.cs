@@ -9,6 +9,7 @@ namespace ReverseMarkdown.Converters
         public P(Converter converter) : base(converter)
         {
             Converter.Register("p", this);
+            Converter.Register("o:p", this);
         }
 
         public override string Convert(HtmlNode node)
